@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+import Form from "../../componets/Form/Form";
 
 export default function Login() {
   return (
-    <div>Login</div>
-  )
+    <>
+      <h1>Login</h1>
+      <Form />
+    </>
+  );
 }
