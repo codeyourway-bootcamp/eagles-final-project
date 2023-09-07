@@ -5,6 +5,9 @@ import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Navbar from "./componets/Navbar";
+import { GlobalStyle } from "./componets/Styles/Styles";
+
+
 
 
 function App() {
@@ -16,20 +19,23 @@ function App() {
     });
   }, []);
   return (
-    <> 
-    <Navbar/>
+    <>
+     <GlobalStyle/>
+       <Navbar/> 
       <div>Hello Word</div>
       <div>
         <Home/>
         <Dashboard/>
         <Register/>
-        <Login/>
+        <Login/> 
+        
         
         {users
           ? users.data[0].user_name + " " + users.data[0].user_email
           : "Carregando..."}{" "}
      
       </div> 
+      
     </>
 
   );
