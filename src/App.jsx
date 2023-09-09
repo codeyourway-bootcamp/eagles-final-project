@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { user_registration } from "./FakeDatabase";
-import Home from "./pages/Home";
-import Dashboard from "./pages/Dashboard";
-import Register from "./pages/Register";
+import { Outlet } from "react-router-dom";
 import Login from "./pages/Login";
-import Navbar from "./componets/Navbar";
+
+
+
+
 
 
 function App() {
@@ -15,21 +16,18 @@ function App() {
       setUsers(data);
     });
   }, []);
+  
   return (
     <> 
-    <Navbar/>
-      <div>Hello Word</div>
-      <div>
-        <Home/>
-        <Dashboard/>
-        <Register/>
-        <Login/>
-        
-        {users
-          ? users.data[0].user_name + " " + users.data[0].user_email
+   {users
+          ? users.data[0].user_fullname + " " + users.data[0].user_email
           : "Carregando..."}{" "}
-     
-      </div> 
+   
+    <div>Hello Word</div>
+    
+      <Outlet/>
+    
+
     </>
 
   );
