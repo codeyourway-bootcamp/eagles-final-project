@@ -1,18 +1,18 @@
-import React from "react";
-
-
-
-export default function Navbar() {
+import React from 'react';
+import Logo from '../../../public/Logo/Logo.png'; // Importe o logotipo da sua empresa
+import { ImgLogo } from '../Styles/styles';
+const Navbar = () => {
   return (
-    <>
-      <nav className='#0d47a1 blue darken-4'>
-        <div className="nav-wrapper">
-          <a href="#" className="brand-logo">Quick opinion</a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-      </nav>
-    </>
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <ImgLogo src={Logo}  alt="Logo da Empresa" />
+        <span>Nome da Empresa</span>
+      </div>
+      <div className="navbar-login">
+        <button>Login</button>
+      </div>
+    </nav>
   );
-}
+};
+
+export default Navbar;

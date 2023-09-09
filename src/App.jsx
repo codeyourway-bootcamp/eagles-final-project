@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { user_registration } from "./FakeDatabase";
 import Home from "./pages/Home";
 import Navbar from "./componets/Navbar";
-import { GlobalStyle } from "./componets/Styles/styles";
+
 
 function App() {
   // Usando FakeDatabase com um estado
@@ -14,8 +14,7 @@ function App() {
   }, []);
   return (
     <> 
-    <GlobalStyle/>
-    <Navbar/>
+   <Navbar/>
     <Home/>
     
       <div>
