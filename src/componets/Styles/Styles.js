@@ -1,19 +1,29 @@
-import {styled, createGlobalStyle} from 'styled-components';
-
+import { styled, createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 body{
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,39,253,1) 50%, rgba(252,176,69,1) 72%, rgba(69,80,252,1) 88%, rgba(0,0,3,1) 99%);
+   background-color: burlywood;
+    /* background: rgb(0,0,0); */
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,39,253,1) 50%, rgba(252,176,69,1) 72%, rgba(69,80,252,1) 88%, rgba(0,0,3,1) 99%); */
     font-family: Arial;
-    color: greenyellow;
-}
+    
 
+}`;
+
+export const H1 = styled.h1`
+color: #fff;
+font-size: 50px;
 `;
 
-export const Container = styled.div`
-display: flex;
+export const H1s = styled(H1)`
+color: #fff;
+font-size: 30px;
+`;
 
-`
+// export const Btn = styled.button`
+// width: 30;
+// height: 15;
+// border-radius: 50%;
+// background-color: #F9A01B;
 
-export const background = styled
+// `;
