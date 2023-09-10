@@ -36,6 +36,8 @@ export const NavbarWrapper = styled.div`
 export const Logo = styled.img`
   width: 50px;
   height: auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px #2D8BBA;
 `;
 
 export const CompanyName = styled.h1`
@@ -47,7 +49,7 @@ export const CompanyName = styled.h1`
 export const CapaImage = styled.img`
 width: 250px;
 height: 450px;
-box-shadow: 45deg 4px 4px 4px rgba(255, 255.255.0);
+box-shadow: 12px 12px 20px black;
 
 `;
 
