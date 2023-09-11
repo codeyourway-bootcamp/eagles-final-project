@@ -1,17 +1,23 @@
 import React from "react";
-// import { Btn } from "../Button/Button";
+import { CompanyName, Logo, NavbarWrapper } from "../Styles/Styles";
+import { ButtonNav } from "../Button/Button";
+import { ContainerNav } from "../Container/Container";
+
+
 
 
 export default function Navbar() {
-  return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <img src={Logo} alt="Logo da Empresa" />
-        <span>Quick Opinion</span>
-      </div>
-      <div className="navbar-login">
-        {/* <Btn>Login</Btn> */}
-      </div>
-    </nav>
-  );
-};
+    return (
+      <NavbarWrapper>
+        <ContainerNav>
+          <Logo src="/Img/Logomark.png" alt="Logo da Empresa" />
+          <CompanyName>QUICKOPINION</CompanyName>
+        </ContainerNav>
+        <div>
+          {/* <ButtonNav>Register</ButtonNav> */}
+          <ButtonNav>Login</ButtonNav>
+        </div>
+      </NavbarWrapper>
+    );
+  };
+  

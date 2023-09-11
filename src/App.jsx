@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 import { user_registration } from "./FakeDatabase";
 import { Outlet } from "react-router-dom";
-import Login from "./pages/Login";
-
-
-
-
-
+import Navbar from "./componets/Navbar/Navbar";
+import Footer from "./componets/Footer/Footer";
+import { ContainerMain } from "./componets/Container/Container";
 
 function App() {
   // Usando FakeDatabase com um estado
@@ -16,20 +13,16 @@ function App() {
       setUsers(data);
     });
   }, []);
-  
+
   return (
-    <> 
-   {users
-          ? users.data[0].user_fullname + " " + users.data[0].user_email
-          : "Carregando..."}{" "}
-   
-    <div>Hello Word</div>
-    
-      <Outlet/>
-    
-
+    <>
+      {users
+        ? users.data[0].user_fullname + " " + users.data[0].user_email
+        : "Carregando..."}{" "}
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
-
   );
 }
 
