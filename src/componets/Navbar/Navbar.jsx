@@ -14,7 +14,7 @@ export default function Navbar() {
           <CompanyName>QUICKOPINION</CompanyName>
         </ContainerNav>
         <div>
-          {/* <ButtonNav>Register</ButtonNav> */}
+          <ButtonNav>Cadastre-se</ButtonNav> 
           <ButtonNav>Login</ButtonNav>
         </div>
       </NavbarWrapper>
