@@ -6,10 +6,12 @@ export const Button = styled.button`
   width: 180px;
   font-size: large;
   padding: 15px 25px;
-  border: none;
+  border-width: 1px;
+  border-color: #fff;
+  margin: 3px;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 4px 4px 8px #2D8BBA;
+  box-shadow: 4px 4px 8px  #2D8BBA;
 
 
   &:hover {
@@ -30,3 +32,10 @@ export const ButtonNav = styled(Button)`
     background-color: #F9A01B;
   }
 `;
+ export const ButtonStyle = styled.button`
+ background-color: orange;
+ width: 180px;
+ border-radius: 50%;
+ color: white;
+ 
+ `;

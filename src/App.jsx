@@ -20,8 +20,8 @@ function App() {
         ? users.data[0].user_fullname + " " + users.data[0].user_email
         : "Carregando..."}{" "}
       <Navbar />
-      <Outlet />
-      <Footer />
+      <Outlet /> 
+      {/* <Footer /> */}
     </>
   );
 }
