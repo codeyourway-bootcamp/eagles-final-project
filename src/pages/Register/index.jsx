@@ -1,7 +1,13 @@
 import React from 'react'
+import { H1 } from '../../componets/Styles/Styles'
+import Form from '../../componets/Form/Form'
 
 export default function Register() {
   return (
-    <div>Register</div>
+    <>
+    
+    <H1>Register in construction!!!</H1>
+    <Form isRegister={true}/>
+    </>
   )
-}
+};
