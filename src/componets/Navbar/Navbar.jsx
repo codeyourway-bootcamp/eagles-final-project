@@ -9,21 +9,20 @@ export default function Navbar(props) {
   const isLogin = getUrl.pathname === "/login";
   const navegation = useNavigate();
 
-  return (
-    <NavbarWrapper>
-      <ContainerNav>
-        <Logo src="/Img/Logomark.png" alt="Logo da Empresa" />
-        <CompanyName>QUICKOPINION</CompanyName>
-      </ContainerNav>
-      <div>
-        <ButtonNav
-          onClick={function () {
-            navegation("/login");
-          }}
-        >
-          {isLogin ? "Cadastre-se" : "Login"}
-        </ButtonNav>
-      </div>
-    </NavbarWrapper>
-  );
-}
+export default function Navbar() {
+    return (
+      <NavbarWrapper>
+        <ContainerNav>
+          <Logo src="/Img/Logomark.png" alt="Logo da Empresa" />
+          <CompanyName>QUICKOPINION</CompanyName>
+        </ContainerNav>
+        <div>
+          <ButtonNav>Cadastre-se</ButtonNav> 
+          <ButtonNav>Login</ButtonNav>
+        </div>
+      </NavbarWrapper>
+    );
+  };
+  
+
+
