@@ -8,21 +8,23 @@ body{
     font-family: Arial;
     
 
-}`;
+}
+
+`;
 
 export const H1 = styled.h1`
-color: #fff;
-font-size: 50px;
+  color: #fff;
+  font-size: 50px;
 `;
 
 export const H1s = styled(H1)`
-color: #fff;
-font-size: 30px;
+  color: #fff;
+  font-size: 30px;
 `;
 
 export const Text = styled.p`
-font-size: 30px;
-color: #fff;
+  font-size: 30px;
+  color: #fff;
 `;
 
 export const NavbarWrapper = styled.div`
@@ -37,7 +39,7 @@ export const Logo = styled.img`
   width: 50px;
   height: auto;
   border-radius: 50%;
-  box-shadow: 2px 2px 4px #2D8BBA;
+  box-shadow: 2px 2px 4px #2d8bba;
 `;
 
 export const CompanyName = styled.h1`
@@ -47,9 +49,7 @@ export const CompanyName = styled.h1`
 `;
 
 export const CapaImage = styled.img`
-width: 250px;
-height: 450px;
-box-shadow: 12px 12px 20px black;
-
+  width: 250px;
+  height: 450px;
+  box-shadow: 12px 12px 20px black;
 `;
-
