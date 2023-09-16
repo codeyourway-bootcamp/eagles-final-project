@@ -8,9 +8,7 @@ body{
     font-family: Arial;
     
 
-}
-
-`;
+}`;
 
 export const H1 = styled.h1`
   color: #fff;
