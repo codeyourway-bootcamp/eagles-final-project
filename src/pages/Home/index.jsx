@@ -7,10 +7,9 @@ import {
   ContainerTxt,
 } from "../../componets/Container/Container";
  import { useNavigate } from "react-router-dom";
-
-
 export default function Home() {
   const navegate = useNavigate()
+  
   return (
     // Landing page
     <>
@@ -31,3 +30,8 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
+
