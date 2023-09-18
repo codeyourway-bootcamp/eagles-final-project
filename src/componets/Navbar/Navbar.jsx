@@ -1,3 +1,4 @@
+
 import React from "react";
 import { CompanyName, Logo, NavbarWrapper } from "../Styles/Styles";
 import { ButtonNav } from "../Button/Button";
@@ -26,4 +27,6 @@ export default function Navbar(props) {
       </div>
     </NavbarWrapper>
   );
-}
+};
+
+
