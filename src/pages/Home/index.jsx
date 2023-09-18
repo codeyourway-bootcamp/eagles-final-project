@@ -1,5 +1,5 @@
 import React from "react";
-import { CapaImage, H1, Text } from "../../componets/Styles/Styles";
+import { CapaImage, Text, TxtPadrao } from "../../componets/Styles/Styles";
 import { Button } from "../../componets/Button/Button";
 import {
   ContainerMain,
@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <ContainerMain>
         <ContainerTxt>
-          <H1>Saiba sua nota de acordo com seus clientes</H1>
+          <TxtPadrao>Saiba sua nota de acordo com seus clientes</TxtPadrao>
           <Text>
             Receba dados gráficos com as avaliações de seus produtos e serviços.
           </Text>

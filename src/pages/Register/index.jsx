@@ -6,7 +6,7 @@ export default function Register() {
   return (
     <>
     
-    <H1>Register in construction!!!</H1>
+    <H1>Cadartre-se Aqui!!!</H1>
     <Form isRegister={true}/>
     </>
   )

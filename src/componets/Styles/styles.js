@@ -16,7 +16,10 @@ font-size: 50px;
 `;
 
 export const H1s = styled(H1)`
-color: #fff;
+color: #ffff;
+align-items: center;
+font-size: 50px;
+justify-content: center;
 font-size: 30px;
 `;
 
