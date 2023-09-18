@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { user_registration } from "../../FakeDatabase";
-import { FormControl, FormLabel, Input, Button, Container} from "./StyleForm";
+import { FormControl, FormLabel, Input, Button, Container} from "./StyleForm.js";
 
 // import {
 //   Container,
