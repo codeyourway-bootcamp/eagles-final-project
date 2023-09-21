@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { user_registration } from "./FakeDatabase";
 import { Outlet } from "react-router-dom";
 import Navbar from "./componets/Navbar/Navbar";
-import Footer from "./componets/Footer/Footer";
-import { ContainerMain } from "./componets/Container/Container";
+// import Footer from "./componets/Footer/Footer";
+// import { ContainerMain } from "./componets/Container/Container";
 
 function App() {
   // Usando FakeDatabase com um estado
@@ -21,7 +21,7 @@ function App() {
         : "Carregando..."}{" "}
       <Navbar />
       <Outlet /> 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
