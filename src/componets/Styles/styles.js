@@ -2,10 +2,10 @@ import { styled, createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 body{
-   
-  background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,39,253,1) 50%, rgba(252,176,69,1) 72%, rgba(69,80,252,1) 88%, rgba(0,0,3,1) 99%);
-    font-family: Arial;
+  background: rgb(4,4,10);
+background: linear-gradient(90deg, rgba(4,4,10,1) 0%, rgba(1,8,77,1) 50%, rgba(1,14,173,1) 100%);
+font-family: Arial;
+    
     
 
 }`;
@@ -13,10 +13,15 @@ body{
 export const H1 = styled.h1`
 color: #fff;
 font-size: 50px;
+align-items: center;
+justify-content: center;
 `;
 
 export const H1s = styled(H1)`
-color: #fff;
+color: #ffff;
+align-items: center;
+font-size: 50px;
+justify-content: center;
 font-size: 30px;
 `;
 
@@ -52,4 +57,20 @@ height: 450px;
 box-shadow: 12px 12px 20px black;
 
 `;
+ export const Footer = styled.footer`
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: #2D8BBA;
+ color: #fff;
+ font-size: 20px;
+ padding: 20px;
+ margin-top: 100px;
+ border-radius: 10px;
+ box-shadow: 2px 2px 4px #2D8BBA;
+
+ 
+ `;
 
