@@ -6,7 +6,7 @@ import {
   ContainerForm,
   ContainerTable,
 } from "./StyleDashboard";
-import FeedBack from "../../componets/FeedbackForm/Form";
+import FeedbackForm from "../../componets/FeedbackForm/Form";
 
 export default function Dashboard() {
   return (
@@ -15,8 +15,9 @@ export default function Dashboard() {
         <h1>Dashboard</h1>
         <ContainerForm>
             Requisição de feedback
-            <FeedBack/>
+            <FeedbackForm FormTitle ={"Pergunta teste"} Id={1}/>
         </ContainerForm>
+
         <ContainerTable>
           <ContainerContact>
            
