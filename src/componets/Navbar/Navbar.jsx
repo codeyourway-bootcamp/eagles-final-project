@@ -22,7 +22,7 @@ export default function Navbar(props) {
             navegation("/login");
           }}
         >
-          {isLogin ? "Cadastre-se" : "Login"}
+          {isLogin ? "Cadastre-se" :  "Login"}
         </ButtonNav>
       </div>
     </NavbarWrapper>

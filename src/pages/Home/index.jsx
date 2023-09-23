@@ -1,5 +1,5 @@
 import React from "react";
-import { CapaImage, H1, Text } from "../../componets/Styles/Styles";
+import { CapaImage, Text, H1 } from "../../componets/Styles/Styles";
 import { Button } from "../../componets/Button/Button";
 import {
   ContainerMain,

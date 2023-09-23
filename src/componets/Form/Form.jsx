@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 import { user_registration } from "../../FakeDatabase";
-import {
-  Container,
-  FormControl,
-  FormLabel,
-  Input,
-  Button,
-} from "@chakra-ui/react";
+import { FormControl, FormLabel, Input, Button, Container} from "./StyleForm.js";
+
+// import {
+//   Container,
+//   FormControl,
+//   FormLabel,
+//   Input,
+//   Button,
+// } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 export default function Form(props) {
   const [email, setEmail] = useState("");
