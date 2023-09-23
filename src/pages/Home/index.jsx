@@ -1,13 +1,15 @@
 import React from "react";
-import { CapaImage, H1, Text } from "../../componets/Styles/Styles";
+import { CapaImage, Text, H1 } from "../../componets/Styles/Styles";
 import { Button } from "../../componets/Button/Button";
 import {
   ContainerMain,
   ContainerImage,
   ContainerTxt,
 } from "../../componets/Container/Container";
-
+ import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const navegate = useNavigate()
+  
   return (
     // Landing page
     <>
@@ -18,7 +20,7 @@ export default function Home() {
             Receba dados gráficos com as avaliações de seus produtos e serviços.
           </Text>
           <>
-            <Button>CADASTRE-SE</Button>
+            <Button onClick={function (){navegate("/register")}}>CADASTRE-SE</Button>
           </>
         </ContainerTxt>
         <ContainerImage>
@@ -28,3 +30,8 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
+
