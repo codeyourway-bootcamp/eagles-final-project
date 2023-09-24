@@ -6,8 +6,10 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-import { GlobalStyle } from "./componets/Styles/Styles.js";
+
 import Feedback from "./pages/Feedback/index.jsx";
+import { GlobalStyle } from "./componets/Styles/styles.js";
+
 
 
 const router = createBrowserRouter([

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { CompanyName, Logo, NavbarWrapper } from "../Styles/Styles";
+import { CompanyName, Logo, NavbarWrapper } from "../../componets/Styles/styles";
 import { ButtonNav } from "../Button/Button";
 import { ContainerNav } from "../Container/Container";
 import { useLocation, useNavigate } from "react-router-dom";

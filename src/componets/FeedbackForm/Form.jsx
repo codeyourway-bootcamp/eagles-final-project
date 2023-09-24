@@ -1,42 +1,41 @@
-import React, { useState } from "react";
+//import { Textarea } from '@chakra-ui/react';
+import React, { useState } from 'react';
 
-function FeedbackForm(props) {
-  const [pergunta, setPergunta] = useState("");
-  const [feedback, setFeedback] = useState("");
+const FeedbackForm= () => {
+  const [questions, setQuestions] = useState([]); // Lista de perguntas adicionadas
+  const [feedback, setFeedback] = useState(""); // Feedback da pergunta selecionada
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Aqui você pode fazer algo com a pergunta e o feedback, como enviar para um servidor ou armazenar em algum lugar
-
-    // Reseta os campos do formulário
-    setPergunta("");
-    setFeedback("");
+  const addQuestion = () => {
+    const newQuestion = prompt("Digite a pergunta"); // Caixa de diálogo para adicionar pergunta
+    setQuestions([...questions, newQuestion]);
   };
 
+  const showFeedback = (question) => {
+    const userFeedback = prompt("Digite o feedback para a pergunta: " + question); // Caixa de diálogo para fornecer feedback
+    setFeedback(userFeedback);
+  };
+  
+  // const [showTextarea, setShowTextarea] = useState(false);
+
+  // const handleClick = () => {
+  //   setShowTextarea(true);
+  // };
+
   return (
-    <div>
-      <h1>{props.FormTitle}</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="pergunta">{props.Id}:</label>
-        <input
-          type="text"
-          id="pergunta"
-          value={pergunta}
-          onChange={(e) => setPergunta(e.target.value)}
-        />
+    <>
+      <button onClick={addQuestion}>Adicionar Pergunta</button>
 
-        <label htmlFor="feedback">Feedback:</label>
-        <textarea
-          id="feedback"
-          value={feedback}
-          onChange={(e) => setFeedback(e.target.value)}
-        ></textarea>
+      {questions.map((question, index) => (
+        <div key={index}>
+          <p onClick={() => showFeedback(question)}>{question}</p>
+          {/* <button onClick={() => showFeedback(question)}>Resposta</button> */}
+        </div>
+      ))}
 
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+      {feedback && <p>{feedback}</p>}
+    </>
   );
-}
+};
 
+// export default QuestionForm;
 export default FeedbackForm;

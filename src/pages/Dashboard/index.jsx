@@ -7,15 +7,20 @@ import {
   ContainerTable,
 } from "./StyleDashboard";
 import FeedbackForm from "../../componets/FeedbackForm/Form";
+import{H1} from "../../componets/Styles/styles";
+
+
 
 export default function Dashboard() {
   return (
     <>
       <ContainerDash>
-        <h1>Dashboard</h1>
+        <H1>Dashboard</H1>
         <ContainerForm>
-            Requisição de feedback
-            <FeedbackForm FormTitle ={"Pergunta teste"} Id={1}/>
+            <h2>Requisição de feedback</h2>
+            <FeedbackForm/>
+            
+            
         </ContainerForm>
 
         <ContainerTable>
