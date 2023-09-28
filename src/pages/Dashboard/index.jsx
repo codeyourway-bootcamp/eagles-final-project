@@ -8,6 +8,8 @@ import {
 } from "./StyleDashboard";
 import FeedbackForm from "../../componets/FeedbackForm/Form";
 import{H1} from "../../componets/Styles/styles";
+import ContactForm from "../../componets/ContactForm/ContactForm";
+import Grafico from "../../componets/Charts/Charts.jsx";
 
 
 
@@ -18,21 +20,17 @@ export default function Dashboard() {
         <H1>Dashboard</H1>
         <ContainerForm>
             <h2>Requisição de feedback</h2>
-            <FeedbackForm/>
-            
-            
+            <FeedbackForm/> 
         </ContainerForm>
 
         <ContainerTable>
           <ContainerContact>
-           
-            Contato
-            <li>Wellington</li>
-            <li>Amario</li>
-            <li>Ana Emilly</li>
-            <li>Pedro Lucca</li>
+            <ContactForm />
+            
           </ContainerContact>
-          <ContainerGraphic>Gráfico</ContainerGraphic>
+          <ContainerGraphic>Gráfico
+            <Grafico/>
+          </ContainerGraphic>
         </ContainerTable>
       </ContainerDash>
     </>

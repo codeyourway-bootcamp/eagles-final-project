@@ -35,7 +35,6 @@ const FeedbackForm= () => {
       {feedback && <p>{feedback}</p>}
     </>
   );
-};
+}
 
-// export default QuestionForm;
 export default FeedbackForm;

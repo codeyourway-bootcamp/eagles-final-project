@@ -27,3 +27,18 @@ height: 360px;
 margin: 0 auto;
 padding: 0px;
 `;
+
+export const Container = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+width:530px;
+height: 300px relative;
+border-radius: 20px;
+margin: 0 auto;
+margin-top: 80px;
+padding: 20px;
+background-color: transparent;
+box-shadow: 4px 4px 8px  #2D8BBA;
+`;
