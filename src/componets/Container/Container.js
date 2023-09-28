@@ -26,6 +26,7 @@ width: 480px;
 height: 360px;
 margin: 0 auto;
 padding: 0px;
+border-radius: 50px;
 `;
 
 export const Container = styled.div`

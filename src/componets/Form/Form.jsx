@@ -8,8 +8,7 @@ import { FormControl, FormLabel, Input, Button, Container} from "./StyleForm.js"
 //   FormLabel,
 //   Input,
 //   Button,
-// } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+// } from "@chakra-ui/react"; import { useEffect, useState } from "react";
 export default function Form(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

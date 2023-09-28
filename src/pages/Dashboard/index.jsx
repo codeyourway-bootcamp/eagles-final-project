@@ -9,7 +9,7 @@ import {
 import FeedbackForm from "../../componets/FeedbackForm/Form";
 import{H1} from "../../componets/Styles/styles";
 import ContactForm from "../../componets/ContactForm/ContactForm";
-import Grafico from "../../componets/Charts/Charts.jsx";
+// import Grafico from "../../componets/Charts/Charts.jsx";
 
 
 
@@ -29,7 +29,7 @@ export default function Dashboard() {
             
           </ContainerContact>
           <ContainerGraphic>Gráfico
-            <Grafico/>
+            {/* <Grafico/> */}
           </ContainerGraphic>
         </ContainerTable>
       </ContainerDash>
