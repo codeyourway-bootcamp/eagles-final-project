@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-import Requisicao from "./pages/Requisicao";
+import Requisicao from "./pages/Requisicao/requisicao.jsx"
 import { GlobalStyle } from "./componets/Styles/Styles.js";
 import Feedback from "./pages/Feedback/index.jsx";
 
