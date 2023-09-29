@@ -7,8 +7,15 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 
+
+
+import Requisicao from "./pages/Requisicao/requisicao.jsx"
+import { GlobalStyle } from "./componets/Styles/styles.js";
+
 import Feedback from "./pages/Feedback/index.jsx";
 import { GlobalStyle } from "./componets/Styles/styles.js";
+
+
 
 
 
@@ -22,6 +29,8 @@ const router = createBrowserRouter([
       { path: "register", element: <Register /> },
        { path: "dashboard", element: <Dashboard /> },
       { path: "feedback", element: <Feedback /> },
+      { path: "requisicao", element: <Requisicao /> },
+
     ],
   },
 ]);
