@@ -19,7 +19,7 @@ export default function Form(props) {
   useEffect(() => {
     const user = localStorage.getItem("app@user");
     if (user) {
-      alert("Usuário já logado");
+      // alert("Usuário já logado");
       //user a funcao do react router dom para mandar o user para pagina de dashboard
       // useHistory().push("/dashboard")
     }
@@ -105,4 +105,4 @@ export default function Form(props) {
       )}
     </Container>
   );
-}
+};

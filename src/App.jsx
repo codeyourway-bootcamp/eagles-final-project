@@ -7,18 +7,18 @@ import Navbar from "./componets/Navbar/Navbar";
 
 function App() {
   // Usando FakeDatabase com um estado
-  const [users, setUsers] = useState(null);
-  useEffect(() => {
-    user_registration.then((data) => {
-      setUsers(data);
-    });
-  }, []);
+  // const [users, setUsers] = useState(null);
+  // useEffect(() => {
+  //   user_registration.then((data) => {
+  //     setUsers(data);
+  //   });
+  // }, []);
 
   return (
     <>
-      {users
+      {/* {users
         ? users.data[0].user_fullname + " " + users.data[0].user_email
-        : "Carregando..."}{" "}
+        : "Carregando..."}{" "} */}
       <Navbar />
       <Outlet /> 
       {/* <Footer /> */}
