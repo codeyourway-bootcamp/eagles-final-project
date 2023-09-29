@@ -2,13 +2,7 @@
 import { user_registration } from "../../FakeDatabase";
 import { FormControl, FormLabel, Input, Button, Container} from "./StyleForm.js";
 
-// import {
-//   Container,
-//   FormControl,
-//   FormLabel,
-//   Input,
-//   Button,
-// } from "@chakra-ui/react"; import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 export default function Form(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +13,7 @@ export default function Form(props) {
   useEffect(() => {
     const user = localStorage.getItem("app@user");
     if (user) {
-      // alert("Usuário já logado");
+      alert("Usuário já logado");
       //user a funcao do react router dom para mandar o user para pagina de dashboard
       // useHistory().push("/dashboard")
     }
@@ -105,4 +99,4 @@ export default function Form(props) {
       )}
     </Container>
   );
-};
+}
