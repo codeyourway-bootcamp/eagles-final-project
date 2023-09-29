@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { user_registration } from "./FakeDatabase";
+// import { useEffect, useState } from "react";
+// import { user_registration } from "./FakeDatabase";
 import { Outlet } from "react-router-dom";
 import Navbar from "./componets/Navbar/Navbar";
 // import Footer from "./componets/Footer/Footer";
