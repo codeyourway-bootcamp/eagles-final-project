@@ -6,6 +6,7 @@ import {
   ContainerForm,
   ContainerTable,
 } from "./StyleDashboard";
+
 import FeedbackForm from "../../componets/FeedbackForm/Form";
 import{H1} from "../../componets/Styles/styles";
 import ContactForm from "../../componets/ContactForm/ContactForm";
@@ -13,10 +14,18 @@ import ContactForm from "../../componets/ContactForm/ContactForm";
 
 
 
+
 export default function Dashboard() {
- 
+  const companyName = "WkInformatica"
+  function HandleCopy(){
+    navigator.clipboard.writeText(`${window.location.origin}/feedback/${companyName}`)
+  }
+
   return (
     <>
+    <Button 
+    onClick={HandleCopy}
+    >Copiar Link do Feedback</Button>
       <ContainerDash>
         <H1>Dashboard</H1>
         <ContainerForm>
