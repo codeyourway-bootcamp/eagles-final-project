@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
 // import { Container } from './styles';
@@ -28,6 +29,8 @@ const Feedbackinput = styled.textarea`
 const ButtonEnviar = styled.button``;
 
 function Feedback() {
+  const Params = useParams()
+  console.log(Params)
   return (
     <MainContainer>
       <Title>Como voce avaliaria esse produto ?</Title>

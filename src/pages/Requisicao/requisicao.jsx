@@ -5,6 +5,7 @@ import { Input } from '@chakra-ui/react';
 
 export default function Component (props) {
    //colocar aqui
+
   return (
       <div style={{
         width:'50%',
@@ -15,12 +16,13 @@ export default function Component (props) {
         justifyContent:'space-between'
       }}>   
       <div>
-      <ButtonProduto
-      onClick={() => {
-        alert("Selecione seu produto:");
-      }}
-      >Produto Selecionado</ButtonProduto >
-        <ButtonNovoproduto>Novo Produto</ButtonNovoproduto>
+
+        <input
+        type='text'
+        placeholder='Nome da Empresa'
+        >
+        
+        </input>
         </div>
 <div className='enviar'><ButtonEnviar>Enviar</ButtonEnviar></div>
          {props.children}
