@@ -48,8 +48,10 @@ export default function Navbar(props) {
   const isRegister = getUrl.pathname === "/register";
   const isHome = getUrl.pathname === "/";
   const isFeedback = getUrl.pathname === "/feedback";
+  const isRequisicao = getUrl.parthname === "/requisicao";
 
   const navegation = useNavigate();
+  const navegationRegister = useNavigate("/register");
 
   return (
     <NavbarWrapper>
@@ -61,13 +63,15 @@ export default function Navbar(props) {
         <ButtonNav
           onClick={function () {
             navegation("/login");
+            // navegationRegister("/register");
           }}
         >
-          {isLogin ? "Cadastre-se" :  ""}
+          {isLogin ? "Registre-se" :  ""}
           {isRegister ? "Login" : ""}
           {isDashboard? "Sair" : ""}
           {isHome? "Login" : " "}
           {isFeedback? "Sair" : ""}
+          {isRequisicao? "Sair" : ""}
         </ButtonNav>
       </div>
     </NavbarWrapper>

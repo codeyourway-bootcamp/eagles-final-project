@@ -13,7 +13,7 @@ export default function Form(props) {
   useEffect(() => {
     const user = localStorage.getItem("app@user");
     if (user) {
-      alert("Usuário já logado");
+      // alert("Usuário já logado");
       //user a funcao do react router dom para mandar o user para pagina de dashboard
       // useHistory().push("/dashboard")
     }
@@ -22,9 +22,9 @@ export default function Form(props) {
   const Login = () => {
     user_registration.then((users) => {
       users.data.map((user) => {
-        console.log(user.user_email, user.user_password, email, password);
+        // console.log(user.user_email, user.user_password, email, password);
         if (user.user_email === email && user.user_password === password) {
-          alert("Login efetuado com sucesso");
+          // alert("Login efetuado com sucesso");
           localStorage.setItem("app@user", JSON.stringify(user.user_email));
           // useHistory().push("/dashboard")
         }
