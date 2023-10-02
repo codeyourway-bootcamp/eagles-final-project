@@ -54,6 +54,7 @@ export const CompanyName = styled.h1`
 export const CapaImage = styled.img`
 width: 250px;
 height: 450px;
+border-radius: 32px;
 box-shadow: 12px 12px 20px black;
 
 `;

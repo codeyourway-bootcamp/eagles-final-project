@@ -1,26 +1,40 @@
-import React, { useState } from "react";
+//import { Textarea } from '@chakra-ui/react';
+import React, { useState } from 'react';
 
-export default function FeedBack() {
-  const [feedback, setFeedback] = useState("");
+const FeedbackForm= () => {
+  const [questions, setQuestions] = useState([]); // Lista de perguntas adicionadas
+  const [feedback, setFeedback] = useState(""); // Feedback da pergunta selecionada
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aqui você pode enviar o feedback para o servidor ou executar outras ações
-    console.log(feedback);
+  const addQuestion = () => {
+    const newQuestion = prompt("Digite a pergunta"); // Caixa de diálogo para adicionar pergunta
+    setQuestions([...questions, newQuestion]);
   };
 
+  const showFeedback = (question) => {
+    const userFeedback = prompt("Digite o feedback para a pergunta: " + question); // Caixa de diálogo para fornecer feedback
+    setFeedback(userFeedback);
+  };
+  
+  // const [showTextarea, setShowTextarea] = useState(false);
+
+  // const handleClick = () => {
+  //   setShowTextarea(true);
+  // };
+
   return (
-    <div className="FeedBack">
-      <h1>Formulário de Feedback</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="feedback">Feedback:</label>
-        <textarea
-          id="feedback"
-          value={feedback}
-          onChange={(e) => setFeedback(e.target.value)}
-        ></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    <>
+      <button onClick={addQuestion}>Adicionar Pergunta</button>
+
+      {questions.map((question, index) => (
+        <div key={index}>
+          <p onClick={() => showFeedback(question)}>{question}</p>
+          {/* <button onClick={() => showFeedback(question)}>Resposta</button> */}
+        </div>
+      ))}
+
+      {feedback && <p>{feedback}</p>}
+    </>
   );
-};
+}
+
+export default FeedbackForm;
