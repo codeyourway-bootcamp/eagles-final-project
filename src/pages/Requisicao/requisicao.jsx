@@ -13,12 +13,12 @@ export default function Component (props) {
         justifyContent:'space-between'
       }}>   
       <div>
-      <ButtonProduto
-      onClick={() => {
-        alert("Selecione seu produto:");
-      }}
-      >Produto Selecionado</ButtonProduto >
-        <ButtonNovoproduto>Novo Produto</ButtonNovoproduto>
+        <input
+        type='text'
+        placeholder='Nome da Empresa'
+        >
+        
+        </input>
         </div>
 <div className='enviar'><ButtonEnviar>Enviar</ButtonEnviar></div>
          {props.children}
