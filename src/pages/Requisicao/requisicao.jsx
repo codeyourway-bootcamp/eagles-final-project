@@ -1,8 +1,11 @@
 import React from 'react';
 import { ButtonNovoproduto, ButtonProduto, ButtonEnviar  } from '../../componets/Button/Button';
- 
+import { Input } from '@chakra-ui/react';
+
 
 export default function Component (props) {
+   //colocar aqui
+
   return (
       <div style={{
         width:'50%',
@@ -13,6 +16,7 @@ export default function Component (props) {
         justifyContent:'space-between'
       }}>   
       <div>
+
         <input
         type='text'
         placeholder='Nome da Empresa'
