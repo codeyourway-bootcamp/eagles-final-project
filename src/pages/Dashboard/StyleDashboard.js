@@ -16,12 +16,19 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 export const ContainerForm = styled.div`
+display:inline-table; 
+padding: 10px;
+background-color: white;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
 width: 1200px;
-height: 400px;
+height: 400px relative;
 margin: 0 auto;
+gap: 30px;
 /* margin-top: 100px;
 margin-bottom: 100px; */
-padding: 10px;
+
 background-color: white;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -39,3 +39,56 @@ export const ButtonNav = styled(Button)`
  color: white;
  
  `;
+
+export const ButtonProduto = styled(Button)`
+background-color: #242462;
+ color: #fff;
+ font-size: 15px;
+ border:  8px;
+ border-color: white;
+ padding: 10px 20px;
+ border-radius: 10px;
+ height: 40px;
+ cursor: pointer;
+
+ &:hover {
+   background-color: #F9A01B;
+ }
+`;
+
+export const ButtonNovoproduto = styled(Button)`
+background-color: #2a9df4;
+ color: #fff;
+ font-size: 15px;
+ border:  8px;
+ border-color: white;
+ padding: 10px 20px;
+ border-radius: 10px;
+ height: 40px;
+ cursor: pointer;
+ 
+
+ &:hover {
+   background-color: #F9A01B;
+ }
+`;
+
+
+export const ButtonEnviar = styled(Button)`
+background-color: #e8e337;
+ color: #fff;
+ font-size: 15px;
+ border:  8px;
+ border-color: none;
+ padding: 10px 20px;
+ border-radius: 10px;
+ height: 40px;
+ cursor: pointer;
+ 
+
+ &:hover {
+   background-color: #242462;
+ }
+`;
+
+

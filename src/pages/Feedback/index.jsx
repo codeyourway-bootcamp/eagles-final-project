@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
 // import { Container } from './styles';
@@ -16,7 +17,7 @@ const Title = styled.h1`
 `;
 const Feedbackinput = styled.textarea`
   border-width: 5px;
-  background-color: #060624;
+  background-color: #242462;
   border-radius: 20px;
   width: 545px;
   height: 250px;
@@ -28,44 +29,46 @@ const Feedbackinput = styled.textarea`
 const ButtonEnviar = styled.button``;
 
 function Feedback() {
+  const Params = useParams()
+  console.log(Params)
   return (
     <MainContainer>
       <Title>Como voce avaliaria esse produto ?</Title>
-      <h2>nome e link do produto</h2>
+      <Title>nome e link do produto</Title>
       <div>
         <FeedbackButton
           color={"red"}
           text={"1"}
           onClick={() => {
-            alert("botao clicado");
+            alert("Muito ruim");
           }}
         />
         <FeedbackButton
-          color={"orange"}
+          color={"#FF7200"}
           text={"2"}
           onClick={() => {
-            alert("botao clicado");
+            alert("Ruim");
           }}
         />
         <FeedbackButton
-          color={"light-orange"}
+          color={"#ffc222"}
           text={"3"}
           onClick={() => {
-            alert("botao clicado");
-          }}
-        />
-        <FeedbackButton
-          color={"yellow"}
-          text={"4"}
-          onClick={() => {
-            alert("botao clicado");
+            alert("Bom");
           }}
         />
         <FeedbackButton
           color={"green"}
+          text={"4"}
+          onClick={() => {
+            alert("Otimo");
+          }}
+        />
+        <FeedbackButton
+          color={"blue"}
           text={"5"}
           onClick={() => {
-            alert("botao clicado");
+            alert("Excelente");
           }}
         />
       </div>
@@ -88,6 +91,7 @@ function FeedbackButton({ color, onClick, text }) {
   const ButtonText = styled.p`
     font-size: 18px;
     font-weight: bold;
+    color: white;
   `;
   return (
     <ButtonContainer color={color} onClick={onClick}>
