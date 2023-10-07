@@ -8,38 +8,38 @@ import {
 } from "./StyleDashboard";
 
 import FeedbackForm from "../../componets/FeedbackForm/Form";
-import{H1} from "../../componets/Styles/styles";
+import { H1 } from "../../componets/Styles/styles";
 import ContactForm from "../../componets/ContactForm/ContactForm";
-// import Grafico from "../../componets/Charts/Charts.jsx";
-
+import { Button } from "../../componets/Button/Button";
+// import {NewGraphic} from "../../componets/Charts/NewGraphic";
 
 
 
 export default function Dashboard() {
-  const companyName = "WkInformatica"
-  function HandleCopy(){
-    navigator.clipboard.writeText(`${window.location.origin}/feedback/${companyName}`)
+  const companyName = "WkInformatica";
+  function HandleCopy() {
+    navigator.clipboard.writeText(
+      `${window.location.origin}/feedback/${companyName}`
+    );
   }
 
   return (
     <>
-    <Button 
-    onClick={HandleCopy}
-    >Copiar Link do Feedback</Button>
       <ContainerDash>
-        <H1>Dashboard</H1>
+        <H1>Bem Vindo!!!</H1>
         <ContainerForm>
-            <h2>Requisição de feedback</h2>
-            <FeedbackForm/> 
+          <h2>Requisição de feedback</h2>
+          <FeedbackForm />
+          <Button onClick={HandleCopy}>Copiar link</Button>
         </ContainerForm>
 
         <ContainerTable>
           <ContainerContact>
             <ContactForm />
-            
           </ContainerContact>
-          <ContainerGraphic>Gráfico
-            {/* <Grafico/> */}
+          <ContainerGraphic>
+            Gráfico
+            {/* <NewGraphic/> */}
           </ContainerGraphic>
         </ContainerTable>
       </ContainerDash>

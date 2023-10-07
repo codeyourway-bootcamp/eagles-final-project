@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useNavigate } from "react-router";
 import { user_registration } from "../../FakeDatabase";
 import { FormControl, FormLabel, Input, Button, Container} from "./StyleForm.js";
 
@@ -9,24 +10,21 @@ export default function Form(props) {
   const [name, setName] = useState("");
   const [sobrenome, setSobrenome] = useState("");
 
-  // esse hook é executado na montagem do componente.
   useEffect(() => {
     const user = localStorage.getItem("app@user");
     if (user) {
-      // alert("Usuário já logado");
-      //user a funcao do react router dom para mandar o user para pagina de dashboard
-      // useHistory().push("/dashboard")
+     navigate("/dashboard")
+   
     }
   }, []);
+  const navigate = useNavigate()
 
   const Login = () => {
     user_registration.then((users) => {
       users.data.map((user) => {
-        // console.log(user.user_email, user.user_password, email, password);
         if (user.user_email === email && user.user_password === password) {
-          // alert("Login efetuado com sucesso");
           localStorage.setItem("app@user", JSON.stringify(user.user_email));
-          // useHistory().push("/dashboard")
+          navigate("/dashboard")
         }
       });
     });
