@@ -11,7 +11,7 @@ import FeedbackForm from "../../componets/FeedbackForm/Form";
 import { H1 } from "../../componets/Styles/styles";
 import ContactForm from "../../componets/ContactForm/ContactForm";
 import { Button } from "../../componets/Button/Button";
-// import {NewGraphic} from "../../componets/Charts/NewGraphic";
+import {Grafico} from "../../componets/Charts";
 
 
 
@@ -38,8 +38,7 @@ export default function Dashboard() {
             <ContactForm />
           </ContainerContact>
           <ContainerGraphic>
-            Gráfico
-            {/* <NewGraphic/> */}
+            <Grafico/> 
           </ContainerGraphic>
         </ContainerTable>
       </ContainerDash>
