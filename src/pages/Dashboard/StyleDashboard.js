@@ -5,10 +5,11 @@ display: flex;
 width: 100%;
 height: 100%;
 margin: 0 auto;
-align-items: start;
+align-items:center;
+justify-content: center;
 flex-direction: column;
 padding: 10px;
-background-color: pink;
+/* background-color: pink; */
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -16,21 +17,18 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 export const ContainerForm = styled.div`
-display:inline-table; 
-padding: 10px;
+display:flex; 
+padding: 0px;
 background-color: white;
 justify-content: center;
 align-items: center;
-border-radius: 10px;
-width: 1200px;
+/* border-radius: 10px; */
+width: 100%;
 height: 400px relative;
 margin: 0 auto;
 gap: 30px;
-/* margin-top: 100px;
-margin-bottom: 100px; */
-
-background-color: white;
-border-radius: 10px;
+color: white;
+background-color: transparent;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
@@ -42,18 +40,23 @@ margin: 0 auto;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+border: 2px solid;
 padding: 10px;
-background-color: yellowgreen;
+background-color: bluedark;
+color: white;
 border-radius: 10px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const ContainerGraphic= styled.div`
 width: 400px;
 height: 400px;
 margin: 0 auto;
+justify-content: center;
+align-items: center;
 padding: 10px;
-background-color: yellow;
+background-color: white;
+border: 1px solid;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
@@ -66,9 +69,9 @@ width: 100%;
 height: 450px;
 margin: 0 auto;
 padding: 0px;
-background-color: red;
-border-radius: 10px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* background-color: red; */
+/* border-radius: 10px; */
+/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 `;
 
 

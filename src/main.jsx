@@ -27,8 +27,8 @@ const router = createBrowserRouter([
       { path: "requisicao", element: <Requisicao /> },
       { path: "/feedback/:companyId",element: <Feedback/> },
       { path: "register", element: <Register /> },
-       
       ]},
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
