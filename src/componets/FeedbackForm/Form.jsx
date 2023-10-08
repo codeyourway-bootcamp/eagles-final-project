@@ -1,12 +1,13 @@
 //import { Textarea } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { Button } from '../Button/Button';
 
 const FeedbackForm= () => {
-  const [questions, setQuestions] = useState([]); // Lista de perguntas adicionadas
-  const [feedback, setFeedback] = useState(""); // Feedback da pergunta selecionada
+  const [questions, setQuestions] = useState([]); 
+  const [feedback, setFeedback] = useState(""); 
 
   const addQuestion = () => {
-    const newQuestion = prompt("Digite a pergunta"); // Caixa de diálogo para adicionar pergunta
+    const newQuestion = prompt("Digite a pergunta"); 
     setQuestions([...questions, newQuestion]);
   };
 
@@ -23,7 +24,7 @@ const FeedbackForm= () => {
 
   return (
     <>
-      <button onClick={addQuestion}>Adicionar Pergunta</button>
+      <Button onClick={addQuestion}>Nova Pergunta</Button>
 
       {questions.map((question, index) => (
         <div key={index}>

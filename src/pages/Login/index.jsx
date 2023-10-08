@@ -6,6 +6,8 @@ import { H1s } from "../../componets/Styles/styles";
 
 
 export default function Login() {
+  // const handleSumit = (e) => {
+    // e.preventDefault();
   return (
     <>
     <Container>
@@ -15,3 +17,4 @@ export default function Login() {
     </>
   );
 }
+

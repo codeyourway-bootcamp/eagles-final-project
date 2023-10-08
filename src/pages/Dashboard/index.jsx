@@ -11,7 +11,7 @@ import FeedbackForm from "../../componets/FeedbackForm/Form";
 import { H1 } from "../../componets/Styles/styles";
 import ContactForm from "../../componets/ContactForm/ContactForm";
 import { Button } from "../../componets/Button/Button";
-// import Grafico from "../../componets/Charts/Charts.jsx";
+import { Grafico } from "../../componets/Charts";
 
 export default function Dashboard() {
   const companyName = "WkInformatica";
@@ -23,12 +23,12 @@ export default function Dashboard() {
 
   return (
     <>
-      <Button onClick={HandleCopy}>Copiar Link do Feedback</Button>
       <ContainerDash>
-        <H1>Dashboard</H1>
+        <H1>Bem Vindo!!!</H1>
         <ContainerForm>
           <h2>Requisição de feedback</h2>
           <FeedbackForm />
+          <Button onClick={HandleCopy}>Copiar link</Button>
         </ContainerForm>
 
         <ContainerTable>
@@ -36,8 +36,7 @@ export default function Dashboard() {
             <ContactForm />
           </ContainerContact>
           <ContainerGraphic>
-            Gráfico
-            {/* <Grafico/> */}
+            <Grafico />
           </ContainerGraphic>
         </ContainerTable>
       </ContainerDash>
