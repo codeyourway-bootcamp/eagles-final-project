@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -29,8 +29,10 @@ const Feedbackinput = styled.textarea`
 const ButtonEnviar = styled.button``;
 
 function Feedback() {
-  const Params = useParams()
-  console.log(Params)
+  const Params = useParams();
+  console.log(Params);
+  const [form, setForm] = useState("WkInformatica");
+  console.log(form, setForm);
   return (
     <MainContainer>
       <Title>Como voce avaliaria esse produto ?</Title>
@@ -40,6 +42,7 @@ function Feedback() {
           color={"red"}
           text={"1"}
           onClick={() => {
+            setForm({ ...form, avaliation: 1 });
             alert("Muito ruim");
           }}
         />
@@ -47,6 +50,7 @@ function Feedback() {
           color={"#FF7200"}
           text={"2"}
           onClick={() => {
+            setForm({ ...form, avaliation: 2 });
             alert("Ruim");
           }}
         />
@@ -54,6 +58,7 @@ function Feedback() {
           color={"#ffc222"}
           text={"3"}
           onClick={() => {
+            setForm({ ...form, avaliation: 3 });
             alert("Bom");
           }}
         />
@@ -61,6 +66,7 @@ function Feedback() {
           color={"green"}
           text={"4"}
           onClick={() => {
+            setForm({ ...form, avaliation: 4 });
             alert("Otimo");
           }}
         />
@@ -68,6 +74,7 @@ function Feedback() {
           color={"blue"}
           text={"5"}
           onClick={() => {
+            setForm({ ...form, avaliation: 5 });
             alert("Excelente");
           }}
         />
