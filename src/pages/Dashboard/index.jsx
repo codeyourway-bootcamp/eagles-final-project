@@ -11,9 +11,7 @@ import FeedbackForm from "../../componets/FeedbackForm/Form";
 import { H1 } from "../../componets/Styles/styles";
 import ContactForm from "../../componets/ContactForm/ContactForm";
 import { Button } from "../../componets/Button/Button";
-import {Grafico} from "../../componets/Charts";
-
-
+import { Grafico } from "../../componets/Charts";
 
 export default function Dashboard() {
   const companyName = "WkInformatica";
@@ -38,7 +36,7 @@ export default function Dashboard() {
             <ContactForm />
           </ContainerContact>
           <ContainerGraphic>
-            <Grafico/> 
+            <Grafico />
           </ContainerGraphic>
         </ContainerTable>
       </ContainerDash>
