@@ -39,3 +39,50 @@ const FeedbackForm= () => {
 }
 
 export default FeedbackForm;
+
+
+
+//############################################
+
+
+// import React from 'react';
+// import { useForm, useFieldArray } from 'react-hook-form';
+
+// const FeedbackForm = () => {
+//   const { control, handleSubmit } = useForm();
+//   const { fields, append, remove } = useFieldArray({
+//     control,
+//     name: 'questions',
+//   });
+
+//   const onSubmit = (data) => {
+//     console.log(data);
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit(onSubmit)}>
+//       {fields.map((item, index) => (
+//         <div key={item.id}>
+//           <label>  {index + 1}</label>
+//           <input {...control.register(`questions.${index}.question`)} />
+
+//           <label>Resposta #{index + 1}</label>
+//           <textarea {...control.register(`questions.${index}.answer`)} />
+
+//           <button type="button" onClick={() => remove(index)}>
+//             Remover Pergunta
+//           </button>
+//         </div>
+//       ))}
+
+//       <button type="button" onClick={() => append({ question: '', answer: '' })}>
+//         Adicionar Pergunta
+//       </button>
+
+//       <button type="submit">Enviar</button>
+//     </form>
+//   );
+// };
+
+// export default FeedbackForm;
+

@@ -32,7 +32,7 @@ const fetchData = () => {
         datasets: [
           {
             // label: 'Conjunto de Dados 1', 
-            data: [1, 5, 7, 4, 40], 
+            data: [14, 45, 29, 30, 40], 
             backgroundColor: ['#FF0000', '#FFA500', '#FFFF00', '#00FF00', '#0000FF'], 
           },
         //   {
